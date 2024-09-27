@@ -11,11 +11,11 @@ function setScore(score) {
   $score.textContent = score
 }
 
-function setImage() { 
-  if (getScore() >= 1000) { 
-    $circle.setAttribute('src', './assets/lizzard.png') 
-  } 
-} 
+function setImage() {
+  if (getScore() >= 50) {
+    $circle.setAttribute('src', './assets/lizzard.png')
+  }
+}
 
 function getScore() {
   return Number(localStorage.getItem('score')) ?? 0
@@ -26,7 +26,7 @@ function addOne() {
   setImage()
 }
 
-$circle.addEventListener('click', (event  )=>{
+$circle.addEventListener('click', (event) => {
   const rect = $circle.getBoundingClientRect()
 
   const offfsetX = event.clientX - rect.left - rect.width / 2
