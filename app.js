@@ -12,7 +12,7 @@ function setScore(score) {
 }
 
 function setImage() {
-  if (getScore() >= 50) {
+  if (getScore() >= 1000) {
     $circle.setAttribute('src', './assets/lizzard.png')
   }
 }
