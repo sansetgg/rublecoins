@@ -11,19 +11,11 @@ function setScore(score) {
   $score.textContent = score
 }
 
-function setImage() {
-  if (getScore() >= 1000) {
-    $circle.setAttribute('src', './assets/photo_5456294485853068276_y.jpg')}
-  if (getScore() >= 5000) {
-    $circle.setAttribute ('src', './assets/photo_5456294485853068347_y.jpg')}
-
-    if (getScore() >= 15000) {
-      $circle.setAttribute('src', './assets/photo_5456294485853068347_y.jpg')}
-      if (getScore() >= 100000) {
-        $circle.setAttribute('src', './assets/photo_5456294485853068348_y.jpg')}
-        if (getScore() >= 200000) {
-          $circle.setAttribute('src', './assets/photo_5456294485853068349_y.jpg')}
-}
+function setImage() { 
+  if (getScore() >= 1000) { 
+    $circle.setAttribute('src', './assets/lizzard.png') 
+  } 
+} 
 
 function getScore() {
   return Number(localStorage.getItem('score')) ?? 0
