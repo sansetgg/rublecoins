@@ -13,8 +13,14 @@ function setScore(score) {
 
 function setImage() {
   if (getScore() >= 1000) {
-    $circle.setAttribute('src', './lizzard.png')
-  }
+    $circle.setAttribute('src', './2bara.jpg')}
+  if (getScore() >= 3000) {
+    $circle.setAttribute ('src', './cupiD.jpg')}
+
+    if (getScore() >= 15000) {
+      $circle.setAttribute('src', './cymibar.jpg')}
+      if (getScore() >= 100000) {
+        $circle.setAttribute('src', './cypibara.jpg')}
 }
 
 function getScore() {
